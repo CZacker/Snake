@@ -95,8 +95,8 @@ var snakeGame = {
             	break;
         }
         //防止按键速度过快出现BUG
-        this.flag = false;
-        this.timeOut = setTimeout(function() {
+        this.flag = 0;
+        this.timeOut = setTimeout(()=> {
         	this.flag = true;
         }, 100);
 	},
